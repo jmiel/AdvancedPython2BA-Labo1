@@ -22,7 +22,8 @@ def roots(a, b, c):
     else:
         return ((-b+math.sqrt(delta))/(2*a), (-b-math.sqrt(delta))/(2*a))
     
-
+def f(x):
+    return x
 def integrate(function, lower, upper):
     return (function (lower)+function (upper))* (upper - lower) / 2 #first degree approximation
 
