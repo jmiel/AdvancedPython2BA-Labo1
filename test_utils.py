@@ -14,7 +14,7 @@ class TestUtils(unittest.TestCase):
         
     
     def test_integrate(self):
-        # À compléter...
+        self.assertEqual(utils.integrate (utils.f,2,4), 6)
         pass
 
 if __name__ == '__main__':

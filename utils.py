@@ -24,15 +24,7 @@ def roots(a, b, c):
     
 
 def integrate(function, lower, upper):
-    """Approximates the integral of a fonction between two bounds
-    
-    Pre: 'function' is a valid Python expression with x as a variable,
-         'lower' <= 'upper',
-         'function' continuous and integrable between 'lower‘ and 'upper'.
-    Post: Returns an approximation of the integral from 'lower' to 'upper'
-          of the specified 'function'.
-    """
-    pass
+    return (function (lower)+function (upper))* (upper - lower) / 2 #first degree approximation
 
 if __name__ == '__main__':
     print(fact(5))
